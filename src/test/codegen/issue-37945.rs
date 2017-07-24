@@ -8,6 +8,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
+// ignore-test FIXME this should get removed (added in llvm 5.0 upgrade)
 // min-llvm-version 4.0
 // compile-flags: -O
 // ignore-x86
