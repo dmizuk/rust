@@ -14,10 +14,7 @@ X86_ARCHS =
 endif
 
 # these ones do, each OS lists the architectures it supports
-LINUX=$(filter aarch64 mips,$(LLVM_COMPONENTS)) $(X86_ARCHS)
-ifeq ($(filter mips,$(LLVM_COMPONENTS)),mips)
-LINUX += mipsel
-endif
+LINUX=$(filter aarch64,$(LLVM_COMPONENTS)) $(X86_ARCHS)
 
 WINDOWS=$(X86_ARCHS)
 # fails with: failed to get iphonesimulator SDK path: no such file or directory
