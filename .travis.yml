@@ -139,7 +139,7 @@ before_install:
         else
             export SKIP_BUILD=true;
         fi;
-    elif [[ "$TRAVIS_BRANCH" == "auto" || ( "$ALLOW_TRY" == "1" && "$TRAVIS_BRANCH" == "try" ) ]]; then
+    elif [[ "$TRAVIS_BRANCH" == "llvm-5" || ( "$ALLOW_TRY" == "1" && "$TRAVIS_BRANCH" == "try" ) ]]; then
         export SKIP_BUILD=false;
     else
         export SKIP_BUILD=true;
